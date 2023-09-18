@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">kotlinbaru</string>
+    <string name="input_panjang">Input Panjang</string>
+    <string name="input_lebar">Input Lebar</string>
+    <string name="input_tinggi">Input Tinggi</string>
+    <string name="btn_hitung">Hitung</string>
+    <string name="result">Hasil</string>
+
 </resources>
