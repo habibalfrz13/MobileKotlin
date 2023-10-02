@@ -42,29 +42,29 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     }
 
     override fun onClick(v: View?) {
-        if (v?.id==R.id.btn_result){
+        if (v?.id == R.id.btn_result) {
             val width = inputWidth.text.toString().trim()
             val height = inputHeight.text.toString().trim()
             val length = inputLength.text.toString().trim()
-            val volume = height.toDouble() * length.toDouble() * width.toDouble()
-            result.text = volume.toString()
-
 
             var isEmpty = false
 
-            if (width.isEmpty()){
+            if (width.isEmpty()) {
                 isEmpty = true
                 inputWidth.error = "Wajib diisi"
             }
+
             if (height.isEmpty()) {
                 isEmpty = true
                 inputHeight.error = "Wajib diisi"
             }
+
             if (length.isEmpty()) {
                 isEmpty = true
                 inputLength.error = "Wajib diisi"
             }
-            if (!isEmpty){
+
+            if (!isEmpty) {
                 val volume = height.toDouble() * width.toDouble() * length.toDouble()
                 result.text = volume.toString()
             }
